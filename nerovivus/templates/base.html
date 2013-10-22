@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/css/main.css" rel="stylesheet" media="screen">
+    <title>{% block title %}Nerovivus Ltd{% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="nav_bg" class="container">
+        {% block navigation %}
+        <nav class="navbar navbar-static-top" role="navigation">
+        <div class="row">
+        <div class="col-md-2"><a class="navbar-brand" href="#"><b>Nerovivus Ltd.</b></a></div>
+
+
+        <div class="col-md-8">
+            <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                      
+                      </div>
+
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
+                        <ul class="nav navbar-nav custom">
+                          <li><a href="/"><small  style="font-weight:bold;">WHO WE ARE</small></a></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>WHAT WE DO</small><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Website Design &amp; Development</a></li>
+                              <li><a href="#">Application Development</a></li>
+                              <li><a href="#">Parsing Data</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="contacts"><small>CONTACTS</small></a></li>
+                        </ul>
+                        
+                        <!-- <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                          </div>
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </form> -->
+                      </div>
+        </div>
+
+            <div class="col-md-2">
+                <div id="language-bar" class="btn-group pull-right">
+                    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">
+                       Language:
+                    <span>EN</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Russian</a></li>
+                  <li><a href="#">Ukrainian</a></li>
+                  <li><a href="#">Lithuanian</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+        </div></nav>
+
+        {% endblock %}
+    </div>
+
+        {% block jumbotron %}
+                <div class="jumbotron">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5 hidden-xs hidden-sm">
+                       <div class="row panel panelAdv">
+                          <div class="col-xs-12">
+                            <h3> Web Page Design &amp; Development<!-- WEB PAGE DESIGN &amp; DEVELOPMENT--></h3>
+                             <p><small>Everyone needs a face nowadays on the global network. Whether it is for business, hobby or personal representation.</small></p>
+                          </div>
+                       </div>
+                       <div class="row panel panelAdv">
+                          <div class="col-xs-12">
+                            <h3> Business Application Development </h3><!-- WEB PAGE DESIGN &amp; DEVELOPMENT--></h3><!-- <h4><small>BUSINESS APPLICATION DEVELOPMENT</small></h4> -->
+                             <p><small>Have an idea how programming can improve your business, repetative or mundane tasks?</small></p>
+                          </div>
+                       </div>
+                       <div class="row panel panelAdv">
+                          <div class="col-xs-12">
+                            <h3>Web Parsing &amp; Data Management</h3><!-- <h4><small>WEB PARSING</small></h4> -->
+                             <p><small>Need to retrieve data from the internet for your business or personal use? We can parse such entities as web shops, simple web sites, search engines.</small></p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 pull-right">
+                       <img src="/static/img/jb_bg.png" width="400px" class="img-responsive">
+                       
+                    </div>
+                  </div>
+                </div>
+            </div>
+        {% endblock %}
+    <div class="container">
+    <div id="content">
+        {% block content %}
+
+        <h3><small>WHO WE ARE</small></h3>
+        
+        <p>&nbsp;&nbsp;&nbsp;Nerovivus&#8482; Ltd specializes in web page design &amp; programming, web application programming, retrieving data from the internet(parsing). Our team of creative, talented people is always looking forward to make your thoughts, projects, plans come to a live and for challenging and innovative projects which will get you ahead of your competition.</p>
+        <hr/>
+        <h3><small>GET IN TOUCH</small></h3>
+        
+        <p>&nbsp;&nbsp;&nbsp;Do not hesitate to contact us for any kind of enquiry you might have, whether it will be simple question, something you would like to discuss or simply to say hi to us. We are always happy to hear from you! You can click <a href="contacts">here</a> to find out all the ways you can get in touch with us.</p>
+        {% endblock %}
+    </div></div>
+    <div id="footer">
+        {% block footer %}
+         <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <ul>
+              <li ><h4>Sitemap</h4></li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Contacts</li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul>
+              <li><h4>Services</h4></li>
+              <li>Website Design &amp; Development</li>
+              <li>Web Application Development</li>
+              <li>Website Parsing</li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul>
+              <li><h4>Legal Information</h4></li>
+              <li>Terms &amp; Condition</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center">Nerovivus Ltd 2013 &copy; All right reserved.</p>
+       </div>
+        {% endblock %}
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>
